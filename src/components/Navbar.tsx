@@ -9,7 +9,7 @@ export const Navbar = () => {
             <BookIcon />
           </div>
           <p className="text-primary-500 font-bold text-lg uppercase">
-            Coders Book
+            Coders Products
           </p>
         </div>
         <div className="flex gap-4">

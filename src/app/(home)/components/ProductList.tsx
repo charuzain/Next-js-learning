@@ -8,9 +8,9 @@ const ProductList = async () => {
     throw new Error('Occur occured while fetching data');
   }
   const products = await result.json();
-  console.log(products);
+  // console.log(products);
   return (
-    <div className="container bg-pink-300 mx-auto mt-8">
+    <div className="container mx-auto mt-10 md:grid grid-cols-3 gap-x-8 gap-y-8">
       <ProductItem products={products} />
     </div>
   );

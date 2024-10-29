@@ -15,7 +15,7 @@ const Banner = () => {
         </div>
         <div className="flex justify-between items-center absolute top-0 bottom-0 right-0 left-0">
           <p className="md:text-6xl w-3/4 text-white font-bold ml-4">
-            Connect , Share and Trade your favorite reads
+            Connect , Share and Trade your favorite Products
           </p>
           <div className="border-red-500 mr-11 h-full">
             <Image

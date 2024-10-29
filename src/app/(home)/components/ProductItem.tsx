@@ -6,11 +6,11 @@ import Card from './Card';
 
 const ProductItem = ({ products }: { products: Product[] }) => {
   return (
-    <div className='flex flex-wrap justify-between'>
+    <>
       {products.map((product) => (
         <Card key={product.id} product={product } />
       ))}
-    </div>
+    </>
   );
 };
 
