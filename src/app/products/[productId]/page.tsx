@@ -3,6 +3,7 @@
 // import { useRouter } from 'next/navigation';
 import React from 'react';
 import Image from 'next/image';
+import DownloadButton from '../components/DownloadButton'
 
 const Singleproduct = async ({ params }: { params: { productId: string } }) => {
   let productId = params.productId;
@@ -25,9 +26,7 @@ const Singleproduct = async ({ params }: { params: { productId: string } }) => {
         <p className="font-bold text-primary-700">{prouductData.title}</p>
         <p className="mt-2">{prouductData.description}</p>
         <div>
-          <button className="px-4 py-2 mt-2 rounded-md text-white bg-primary-500 hover:border hover:bg-white hover:border-primary-500 hover:text-black">
-            Download
-          </button>
+          <DownloadButton fileLink ={prouductData.image} />
         </div>
       </div>
       <div className="md:w-1/2">
