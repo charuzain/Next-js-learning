@@ -1,17 +1,18 @@
+import Link from 'next/link';
 import React from 'react';
 
 export const Navbar = () => {
   return (
     <div className='border-b-2 border-primary-500 py-1'>
       <nav className="flex justify-between container mx-auto items-center">
-        <div className="flex items-center gap-2">
+        <Link href={'/' } className="flex items-center gap-2">
           <div className="bg-primary-500 flex justify-center items-center w-10 h-10 rounded-3xl m-2 ">
             <BookIcon />
           </div>
           <p className="text-primary-500 font-bold text-lg uppercase">
             Coders Products
           </p>
-        </div>
+        </Link>
         <div className="flex gap-4">
           <button className="rounded-md w-20 h-8 font-bold bg-white border border-primary-500 text-primary-500 hover:bg-primary-500 hover:text-white">
             Sign in

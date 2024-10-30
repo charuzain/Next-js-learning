@@ -20,7 +20,7 @@ const Card = ({ product }: { product: Product }) => {
         <p className="line-clamp-2 font-bold text-primary-700">{product.title}</p>
         <p className='capitalize text-primary-900 font-bold'>{product.category}</p>
         <Link
-          href={`/product/${product.id}`}
+          href={`/products/${product.id}`}
           className="bg-primary-500 p-2 rounded-sm text-white hover:text-primary-500 hover:bg-white hover:border hover:border-primary-500 max-w-28"
         >
           Read More
